@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v13-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@layer components {
+  .max-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @apply px-10
+  }
+
+  .btn {
+    @apply px-2 py-1 rounded-md text-white
+  }
+
+  .text-dark {
+    @apply dark:text-slate-200
+  }
+
+  .forms label {
+    display: block;
+  }
+
+  .forms label span {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .forms form input {
+    padding: 5px 10px;
+    font-family: inherit;
+    font-size: 18px;
+  }
+
+  .forms form button {
+    align-self: flex-start;
+    background-color: rgb(0, 255, 136);
+    color: aliceblue;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-left: 690px;
+    margin-bottom: 20px;
+  }
+
+  .span{
+    font-weight: 600;
+  }
+
+  .input{
+    border: 2px solid rgb(0, 255, 136);
+    border-radius: 12px;
+  }
+
+}
